@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e115dfb9-3011-4a36-a360-79133b52700c"
+      }
+    },
+    "owner": "murilond"
   }
 }
