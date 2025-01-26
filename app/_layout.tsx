@@ -30,7 +30,16 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen 
+          name="auth/login" 
+          options={{ headerShown: false }} 
+        />
+        <Stack.Screen name="auth/register" options={{ headerShown: false }} />
+        <Stack.Screen name="product/index" options={{ headerTitle: "Produtos" }} />
+        <Stack.Screen name="product/create" options={{ headerTitle: "Novo Produto" }} />
+        <Stack.Screen name="product/edit" options={{ headerTitle: "Editar Produto" }} />
+        <Stack.Screen name="product/patch" options={{ headerTitle: "Registro de Entrada/Saida" }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
